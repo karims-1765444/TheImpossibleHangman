@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Player.SetupEvilHangman">
+
+    <TextView
+        android:id="@+id/promptLengthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/promptLength"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/promptAnswersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/promptAnswers"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lengthWordErrorTextView" />
+
+    <EditText
+        android:id="@+id/wordLengthEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter length..."
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promptLengthTextView" />
+
+    <EditText
+        android:id="@+id/wrongAnswersEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter amount..."
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promptAnswersTextView" />
+
+    <Button
+        android:id="@+id/startGameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="PLAY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrongAnswersErrorTextView" />
+
+    <TextView
+        android:id="@+id/lengthWordErrorTextView"
+        android:layout_width="350dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorAccent"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordLengthEditText" />
+
+    <TextView
+        android:id="@+id/wrongAnswersErrorTextView"
+        android:layout_width="354dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorAccent"
+        app:fontFamily="cursive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrongAnswersEditText" />
+
+</android.support.constraint.ConstraintLayout>

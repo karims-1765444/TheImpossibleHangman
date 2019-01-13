@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">The Impossible Hangman</string>
+    <string name="promptAnswers">How many wrong answers allowed?</string>
+    <string name="promptLength">What length word do you want to use?</string>
+    <string name="promptWord">Player 1: Enter a word for player 2 to guess.\nNo need to be nice!</string>
+    <string name="lengthError">No words of that length in the dictionary.</string>
+    <string name="manyWrongAnswers">Where\'s the fun in that?</string>
+    <string name="gameOver">Game already over bro!</string>
+    <string name="password">ostakimo</string>
+    <string name="winner">Wow! You beat me!</string>
+    <string name="loser">As expected, you lost!</string>
+    <string name="cheater">Do you know the developer?!</string>
+    <string name="emptyInput">Please enter a value.</string>
+</resources>
