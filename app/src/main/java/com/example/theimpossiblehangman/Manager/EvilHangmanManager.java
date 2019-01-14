@@ -78,8 +78,8 @@ public class EvilHangmanManager extends HangmanManager {
         return numOccurences(pattern(), guess);
     }
 
-    public void winGame(char guess){
-            String losingWord = "";
+    private void winGame(char guess){
+            String losingWord;
             Iterator<String> iter = words().iterator();
             boolean found = false;
             while (iter.hasNext() && !found){
